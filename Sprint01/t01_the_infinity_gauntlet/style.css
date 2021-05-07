@@ -1,0 +1,13 @@
+body {
+    width: 600px;
+}
+.tanos {
+    display: block;
+}
+.tanos:hover~.people:nth-child(2n)  {
+    transform: scale(0);
+
+}
+.people {
+    width: 100px;
+}

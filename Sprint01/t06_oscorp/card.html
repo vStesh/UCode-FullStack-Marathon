@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Vladimir Steshenko, Владимир Стешенко, UCode, Sprint01, t06, HTML, CSS">
+    <meta name="author" content="Vladimir Steshenko, Владимир Стешенко">
+    <meta name="description" content="UCode It Academy. Sprint01, t06 by Vladimir Steshenko, Oscorp">
+    <title>t06. Oscorp - Products Card</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;family=Poppins&amp;family=Karla&amp;family=Nanum+Gothic" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="top-container ">
+
+        <div class="row align-center space-between">
+            <div class="logo"><a href="index.html">MEGASHOP</a></div>
+            <div class="nav">
+                <ul>
+                    <li id="menu-catalog"><a href="index.html">Каталог</a></li>
+                    <li id="menu-buy">Как купить</li>
+                    <li id="menu-about">О нас</li>
+                    <li id="menu-contacts">Контакты</li>
+                </ul>
+            </div>
+            <div class="nav-button"><i class="fas fa-sliders-h"></i></div>
+        </div>
+        <div class="row align-center flex-end">
+            <div></div>
+            <form action="" class="form-search">
+                <input type="text" class="input-search" placeholder="Поиск товара">
+                <i class="fas fa-search"></i>
+            </form>
+            <div class="top-phone">099-499-499-6, 096-499-499-6</div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container main" id="main">
+        <div class="breadcrumb" id="breadcrumb">
+            <ul>
+                <li class="breadcrumb__link" title="Перейти на главную">
+                    <i class="fas fa-home"></i>
+                </li>
+                <li><a href="index.html">Каталог товара</a></li>
+                <li>Мобильный телефон Apple iPhone 12 mini 64Gb Green (MGE23FS/A | MGE23RM/A)</li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="card__content">
+                <div itemtype="http://schema.org/Product" itemscope>
+                    <meta itemprop="mpn" content="473252" />
+                    <meta itemprop="name" content="Apple iPhone 12 mini 64Gb Green" />
+                    <link itemprop="image" href="assets/images/U0473252_big.jpg" />
+                    <meta itemprop="description" content="5.4, 1080 x 2340 pixels, CPU - Apple A14 Bionic, 4 Gb, 64 Gb, 12
+                          + 12 Mpx, Front - 12 Mpx, Bluetooth, WI-FI, NFC, н. д., зеленый" />
+                    <div itemprop="offers" itemtype="http://schema.org/Offer" itemscope>
+                        <link itemprop="url" href="card.html" />
+                        <meta itemprop="availability" content="https://schema.org/InStock" />
+                        <meta itemprop="priceCurrency" content="UAH" />
+                        <meta itemprop="itemCondition" content="https://schema.org/UsedCondition" />
+                        <meta itemprop="price" content="25999" />
+                        <meta itemprop="priceValidUntil" content="2021-03-29" />
+                    </div>
+                    <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+                        <meta itemprop="reviewCount" content="12" />
+                        <meta itemprop="ratingValue" content="4.4" />
+                    </div>
+                    <div itemprop="review" itemtype="http://schema.org/Review" itemscope>
+                        <div itemprop="author" itemtype="http://schema.org/Person" itemscope>
+                            <meta itemprop="name" content="Петя" />
+                        </div>
+                        <div itemprop="reviewRating" itemtype="http://schema.org/Rating" itemscope>
+                            <meta itemprop="ratingValue" content="4" />
+                            <meta itemprop="bestRating" content="5" />
+                        </div>
+                    </div>
+                    <meta itemprop="sku" content="473252" />
+                    <div itemprop="brand" itemtype="http://schema.org/Brand" itemscope>
+                        <meta itemprop="name" content="APPLE" />
+                    </div>
+                </div>
+                <div class="card__img_big">
+                    <img src="assets/images/U0473252_big.jpg" height="400" width="400"/>
+                </div>
+
+                <div class="content__header">
+                    <h2>Мобильный телефон Apple iPhone 12 mini 64Gb Green (MGE23FS/A | MGE23RM/A)</h2>
+                    <div class="card__brand">Apple</div>
+                    <div class="card__price">
+                        <div class="card__available card__available_true">в наличии</div>25 999
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__footer-button card__footer-like" ><i
+                                class="fas fa-heart"></i><span>Нравится</span></div>
+                        <div class="card__footer-button card__footer-buy" ><i
+                                class="fas fa-cart-plus"></i><span>В корзину</span></div>
+                    </div>
+                    <div class="card__description_new">
+                        дисплей - 5.4",<br/>
+                        разрешение - 1080 x 2340 pixels,<br/>
+                        CPU - Apple A14 Bionic,<br/>
+                        ОЗУ - 4 Gb,<br/>
+                        память - 64 Gb,<br/>
+                        фото - 12 + 12 Mpx, Front - 12 Mpx,<br/>
+                        интерфейс - Bluetooth, WI-FI, NFC,<br/>
+                        цвет - зеленый</div>
+                    <div class="card__reviews">
+                        <h4>Отзывы</h4>
+                        <div class="card__reviews_item">
+                            <h4>Петя</h4>
+                            <p>
+                                 Отличный телефон. Купил на подарок жене, очень довольна. После ее андроида с яблоком разобралась очень быстро. Весьма довольна подарком.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="bottom-container align-center space-between">
+        <div class="copyright">
+            © 2021 - Megashop
+        </div>
+        <div class="contacts">тел. 099-499-499-6, 096-499-499-6</div>
+    </div>
+</footer>
+
+</body>
+</html>

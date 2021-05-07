@@ -1,0 +1,44 @@
+img {
+    height: 120px;
+    width: 120px;
+    border-radius: 10%;
+}
+thead {
+    color: #fff;
+    background: black;
+    border: black;
+}
+table {
+    border: 0;
+    border-spacing: 0;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #fff;
+}
+.orange {
+    background: orange;
+}
+.green {
+    background: green;
+}
+.blue {
+    background: #403fa9;
+}
+.yellow {
+    background: yellow;
+}
+.red {
+    background: #bd2929;
+}
+.purple {
+    background: mediumpurple;
+}
+tfoot {
+    text-align: center;
+}
+tfoot > tr > td {
+    border: 1px solid #b5b0b0;
+}

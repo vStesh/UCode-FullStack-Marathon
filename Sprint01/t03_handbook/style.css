@@ -1,0 +1,65 @@
+
+body {
+    background: #f1f18e;
+}
+.wrapper {
+    width: 99%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.card {
+    /*width: 100%;*/
+    padding: 10px;
+    background: white;
+    text-align: left;
+
+}
+section {
+    display: grid;
+    column-gap: 1em;
+    row-gap: 1em;
+
+}
+.html {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.css {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.protocols {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 1024px) {
+    .html {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .css {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .protocols {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .html {
+        grid-template-columns: 1fr 1fr;
+    }
+    .css {
+        grid-template-columns: 1fr 1fr;
+    }
+    .protocols {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 320px) {
+    .html {
+        grid-template-columns: 1fr;
+    }
+    .css {
+        grid-template-columns: 1fr;
+    }
+    .protocols {
+        grid-template-columns: 1fr;
+    }
+}

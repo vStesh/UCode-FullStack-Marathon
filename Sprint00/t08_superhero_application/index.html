@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Vladimir Steshenko, Владимир Стешенко, UCode, Sprint00, t08, HTML, CSS">
+    <meta name="author" content="Vladimir Steshenko, Владимир Стешенко">
+    <meta name="description" content="UCode It Academy. Sprint00, t08 by Vladimir Steshenko, Superhero application">
+    <title>t08. Superhero application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Superhero Form</h1>
+<form>
+    <fieldset>
+        <legend>About the Superhero</legend>
+        <div class="inner">
+            <label for="realName">Real Name</label>
+            <input id="realName" type="text" placeholder="Superhero real name" autofocus required>
+            <label for="alias">Superhero Name</label>
+            <input id="alias" type="text" placeholder="Superhero alias">
+            <label for="age">Age</label>
+            <input id="age" type="number" class="age" maxlength="3" max="999" min="1" pattern="[0-9]{3}" step="1">
+            <p>
+                <label for="about">About</label>
+                <textarea id="about" rows="5" cols="70" maxlength="500" placeholder="Information about the superhero, max 500 symbols"></textarea>
+            </p>
+            <label for="photo">Photo:</label>
+            <input id="photo" type="file">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Powers</legend>
+        <div class="inner">
+            <p>
+                <input id="p1" type="checkbox">
+                <label for="p1">Telekinesis</label>
+                <input id="p2" type="checkbox">
+                <label for="p2">Super strength or speed</label>
+                <input id="p3" type="checkbox">
+                <label for="p3">Shapeshifting</label>
+                <input id="p4" type="checkbox">
+                <label for="p4">Flight</label>
+                <input id="p5" type="checkbox">
+                <label for="p5">Elemental control</label>
+                <input id="p6" type="checkbox">
+                <label for="p6">Other</label>
+            </p>
+            <p>
+                <label for="range">Level of control</label>
+                <input id="range" type="range" min="0" max="10" step="1" value="1">
+            </p>
+
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Origin of Powers</legend>
+        <input id="r1" name="powers" type="radio" value="unknow">
+        <label for="r1">Unknow</label>
+        <input id="r2" name="powers" type="radio" value="freak">
+        <label for="r2">Freak lab accident</label>
+        <input id="r3" name="powers" type="radio" value="choosen">
+        <label for="r3">Choosen by an ancient wise being</label>
+        <input id="r4" name="powers" type="radio" value="nothuman">
+        <label for="r4">The superhero is not human</label>
+        <input id="r5" name="powers" type="radio" value="other">
+        <label for="r5">Other</label>
+    </fieldset>
+    <input type="reset" value="CLEAR">
+    <input type="submit" value="SEND">
+</form>
+</body>
+</html>

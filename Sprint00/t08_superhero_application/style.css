@@ -1,0 +1,18 @@
+form {
+    border: 2px solid gray;
+    padding: 20px;
+}
+
+.inner {
+    margin-top: 10px;
+}
+.inner > input {
+    border: 1px solid #b5b1b1;
+
+}
+fieldset {
+    margin-bottom: 15px;
+}
+input.age {
+    /*width: 50px;*/
+}

@@ -1,0 +1,19 @@
+.form-group {
+    position: relative;
+    display: flex;
+    height: 2em;
+
+}
+.text-input {
+    width: 100%;
+    border: 2px solid blue;
+    border-radius: 3px;
+    background-color: white;
+}
+.text-input, button{
+    padding-left: 10px;
+    color: green;
+}
+.text-input:hover, button:hover {
+    color: red;
+}

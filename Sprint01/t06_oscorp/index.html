@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Vladimir Steshenko, Владимир Стешенко, UCode, Sprint01, t06, HTML, CSS">
+    <meta name="author" content="Vladimir Steshenko, Владимир Стешенко">
+    <meta name="description" content="UCode It Academy. Sprint01, t06 by Vladimir Steshenko, Oscorp">
+    <title>t06. Oscorp</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;family=Poppins&amp;family=Karla&amp;family=Nanum+Gothic" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="top-container ">
+
+        <div class="row align-center space-between">
+            <div class="logo"><a href="#">MEGASHOP</a></div>
+            <div class="nav">
+                <ul>
+                    <li id="menu-catalog">Каталог</li>
+                    <li id="menu-buy">Как купить</li>
+                    <li id="menu-about">О нас</li>
+                    <li id="menu-contacts">Контакты</li>
+                </ul>
+            </div>
+            <div class="nav-button"><i class="fas fa-sliders-h"></i></div>
+        </div>
+        <div class="row align-center flex-end">
+            <div></div>
+            <form action="" class="form-search">
+                <input type="text" class="input-search" placeholder="Поиск товара">
+                <i class="fas fa-search"></i>
+            </form>
+            <div class="top-phone">099-499-499-6, 096-499-499-6</div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container main" id="main">
+        <div class="breadcrumb" id="breadcrumb">
+            <ul>
+                <li class="breadcrumb__link" title="Перейти на главную">
+                    <i class="fas fa-home"></i>
+                </li>
+                <li>Каталог товара</li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="sidebar" id="sidebar">
+                <h3>Фильтра</h3>
+                <div class="filters" id="filters">
+                    <form id="filter-form">
+                        <div class="filter__button_show display-none" type="submit"
+                             id="filter__button_show">Показать</div>
+                        <div class="filter__item" id="filter-price">
+                            <div class="filter__item_header">Цена:</div>
+                            <div class="row-min space-between">
+                                <div class="filter__item_input">От</div>
+                                <div class="filter__item_input">До</div>
+                            </div>
+                            <div class="row-min"><input type="text" class="filter__item_input" name="min-price" value="125">
+                                <input type="text" class="filter__item_input" name="max-price" value="47999">
+                            </div>
+                        </div>
+                        <div class="filter__item" id="filter-available">
+                            <div class="filter__item_header">Наличие:</div>
+                            <div class="row-min space-between filter__line">
+                                <label for="available">Все товары</label>
+                                <input type="radio" name="available" checked="" value="all">
+                            </div>
+                            <div class="row-min space-between filter__line">
+                                <label for="av-all">Только в наличии</label>
+                                <input type="radio" name="available" value="aval">
+                            </div>
+                        </div>
+                        <div class="filter__item" id="filter-brand">
+                            <div class="filter__item_header">Бренды:</div>
+                            <div class="row-min space-between filter__line">
+                                <label for="av-all">Lenovo</label>
+                                <input type="checkbox" id="Lenovo" name="brand-Lenovo">
+                            </div>
+                            <div class="row-min space-between filter__line">
+                                <label for="av-all">Vinga</label>
+                                <input type="checkbox" id="Vinga" name="brand-Vinga">
+                            </div>
+                            <div class="row-min space-between filter__line">
+                                <label for="av-all">ASUS</label>
+                                <input type="checkbox" id="ASUS" name="brand-ASUS">
+                            </div>
+                            <div class="row-min space-between filter__line"><label for="av-all">HP</label><input
+                                    type="checkbox" id="HP" name="brand-HP"></div>
+                            <div class="row-min space-between filter__line"><label for="av-all">Apple</label><input
+                                    type="checkbox" id="Apple" name="brand-Apple"></div>
+                            <div class="row-min space-between filter__line"><label for="av-all">PHILIPS</label><input
+                                    type="checkbox" id="PHILIPS" name="brand-PHILIPS"></div>
+                            <div class="row-min space-between filter__line"><label for="av-all">Xiaomi</label><input
+                                    type="checkbox" id="Xiaomi" name="brand-Xiaomi"></div>
+                            <div class="row-min space-between filter__line"><label for="av-all">ColorWay</label><input
+                                    type="checkbox" id="ColorWay" name="brand-ColorWay"></div>
+                            <div class="row-min space-between filter__line"><label for="av-all">Remax</label><input
+                                    type="checkbox" id="Remax" name="brand-Remax"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content__header">
+                    <h2>Каталог товара</h2>
+                </div>
+                <div class="content__settings">
+                    <div class="content__settings_count content__settings_item">Найдено 20 товаров</div>
+                    <div class="content__settings_output content__settings_item align-center">Вид:<ul>
+                        <li class="active"><i class="fas fa-bars"></i></li>
+                        <li class=""><i class="fas fa-th"></i></li>
+                    </ul>
+                    </div>
+                    <div class="content__settings_sorting content__settings_item align-center">Сортировка:<ul>
+                        <li class="active">Дорогие</li>
+                        <li class="active">Дешевые</li>
+                        <li class="active">По алфавиту</li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="product-list">
+                    <div class="product-list__block">
+                        <div class="product-list__item">
+
+                            <div itemtype="http://schema.org/Product" itemscope>
+                                <meta itemprop="mpn" content="465282" />
+                                <meta itemprop="name" content="Ноутбук Lenovo V15 (82C70010RA)" />
+                                <link itemprop="image" href="assets/images/U0465282_big.jpg" />
+                                <meta itemprop="description" content="15.6, FullHD (1920 х 1080), TN+film, AMD Ryzen 3 3250U
+                                      (2.6-3.5GHz), 8 ГБ, SSD - 256 ГБ, AMD Radeon Graphics, DOS, 1.85 кг, серый" />
+                                <div itemprop="offers" itemtype="http://schema.org/Offer" itemscope>
+                                    <link itemprop="url" href="card.html" />
+                                    <meta itemprop="availability" content="https://schema.org/InStock" />
+                                    <meta itemprop="priceCurrency" content="UAH" />
+                                    <meta itemprop="itemCondition" content="https://schema.org/UsedCondition" />
+                                    <meta itemprop="price" content="14999" />
+                                    <meta itemprop="priceValidUntil" content="2021-03-29" />
+                                </div>
+                                <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+                                    <meta itemprop="reviewCount" content="12" />
+                                    <meta itemprop="ratingValue" content="4.4" />
+                                </div>
+                                <div itemprop="review" itemtype="http://schema.org/Review" itemscope>
+                                    <div itemprop="author" itemtype="http://schema.org/Person" itemscope>
+                                        <meta itemprop="name" content="Петя" />
+                                    </div>
+                                    <div itemprop="reviewRating" itemtype="http://schema.org/Rating" itemscope>
+                                        <meta itemprop="ratingValue" content="4" />
+                                        <meta itemprop="bestRating" content="5" />
+                                    </div>
+                                </div>
+                                <meta itemprop="sku" content="465282" />
+                                <div itemprop="brand" itemtype="http://schema.org/Brand" itemscope>
+                                    <meta itemprop="name" content="Lenovo" />
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__img">
+                                    <a href="card.html">
+                                        <div class="slider-img" id="U0465282">
+                                            <div class="slider-img__item active"
+                                                 style="background-image: url(assets/images/U0465282_big.jpg)"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card__brand">Lenovo</div>
+                                <div class="card__price">
+                                    <div class="card__available card__available_true">в наличии</div>14&nbsp;999
+                                </div>
+                                <a href="card.html">
+                                    <div class="card__title">Ноутбук Lenovo V15 (82C70010RA)</div>
+                                </a>
+                                <div class="card__footer">
+                                    <div class="card__footer-button card__footer-like"><i
+                                            class="fas fa-heart"></i><span>Нравится</span></div>
+                                    <div class="card__footer-button card__footer-buy"><i
+                                            class="fas fa-cart-plus"></i><span>В корзину</span></div>
+                                </div>
+                            </div>
+
+                            <div class="card__description">15.6", FullHD (1920 х 1080), TN+film, AMD Ryzen 3 3250U
+                                (2.6-3.5GHz), 8 ГБ, SSD - 256 ГБ, AMD Radeon Graphics, DOS, 1.85 кг, серый</div>
+
+                        </div>
+                    </div>
+                    <div class="product-list__block">
+                        <div class="product-list__item">
+                            <div class="card">
+
+                                <div itemtype="http://schema.org/Product" itemscope>
+                                    <meta itemprop="mpn" content="327242" />
+                                    <meta itemprop="name" content="Ноутбук Vinga Twizzle Pen J133 (J133-C33464PSWP)" />
+                                    <link itemprop="image" href="assets/images/U0327242_big.jpg" />
+                                    <meta itemprop="description" content="13.3, FullHD (1920 х 1080), IPS, Intel Celeron N3350 (up to 2.4
+                                          ГГц), 4 ГБ, SSD - 64 ГБ eMMC, Intel HD Graphics 500, Windows 10 Pro, 1.44 кг, серебристый" />
+                                    <div itemprop="offers" itemtype="http://schema.org/Offer" itemscope>
+                                        <link itemprop="url" href="card.html" />
+                                        <meta itemprop="availability" content="https://schema.org/InStock" />
+                                        <meta itemprop="priceCurrency" content="UAH" />
+                                        <meta itemprop="itemCondition" content="https://schema.org/UsedCondition" />
+                                        <meta itemprop="price" content="210999" />
+                                        <meta itemprop="priceValidUntil" content="2021-03-29" />
+                                    </div>
+                                    <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+                                        <meta itemprop="reviewCount" content="12" />
+                                        <meta itemprop="ratingValue" content="4.4" />
+                                    </div>
+                                    <div itemprop="review" itemtype="http://schema.org/Review" itemscope>
+                                        <div itemprop="author" itemtype="http://schema.org/Person" itemscope>
+                                            <meta itemprop="name" content="Петя" />
+                                        </div>
+                                        <div itemprop="reviewRating" itemtype="http://schema.org/Rating" itemscope>
+                                            <meta itemprop="ratingValue" content="4" />
+                                            <meta itemprop="bestRating" content="5" />
+                                        </div>
+                                    </div>
+                                    <meta itemprop="sku" content="327242" />
+                                    <div itemprop="brand" itemtype="http://schema.org/Brand" itemscope>
+                                        <meta itemprop="name" content="Vinga" />
+                                    </div>
+                                </div>
+
+                                <div class="card__img">
+                                    <a href="card.html">
+                                    <div class="slider-img" id="U0327242">
+                                        <div class="slider-img__item active"
+                                             style="background-image: url(assets/images/U0327242_big.jpg)"></div>
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="card__brand">Vinga</div>
+                                <div class="card__price">
+                                    <div class="card__available card__available_true">в наличии</div>10&nbsp;999
+                                </div>
+                                <a href="card.html">
+                                    <div class="card__title">Ноутбук Vinga Twizzle Pen J133 (J133-C33464PSWP)</div>
+                                </a>
+                                <div class="card__footer">
+                                    <div class="card__footer-button card__footer-like"><i
+                                            class="fas fa-heart"></i><span>Нравится</span></div>
+                                    <div class="card__footer-button card__footer-buy"><i
+                                            class="fas fa-cart-plus"></i><span>В корзину</span></div>
+                                </div>
+                            </div>
+
+                                <div class="card__description">13.3", FullHD (1920 х 1080), IPS, Intel Celeron N3350 (up to 2.4
+                                    ГГц), 4 ГБ, SSD - 64 ГБ eMMC, Intel HD Graphics 500, Windows 10 Pro, 1.44 кг, серебристый
+                                </div>
+
+                        </div>
+                    </div>
+                    <div class="product-list__block">
+                        <div class="product-list__item">
+                            <div class="card">
+
+                                <div itemtype="http://schema.org/Product" itemscope>
+                                    <meta itemprop="mpn" content="487914" />
+                                    <meta itemprop="name" content="Ноутбук ASUS K513EA-BQ163 (90NB0SG3-M01960)" />
+                                    <link itemprop="image" href="assets/images/U0487914_big.jpg" />
+                                    <meta itemprop="description" content="15.6, FullHD (1920 х 1080), IPS, Intel Core i3 1115G4 (4.1 ГГц),
+                                          8 ГБ, SSD - 256 ГБ, Intel UHD Graphics, без операционной системы, 1.8 кг, золотой" />
+                                    <div itemprop="offers" itemtype="http://schema.org/Offer" itemscope>
+                                        <link itemprop="url" href="card.html" />
+                                        <meta itemprop="availability" content="https://schema.org/InStock" />
+                                        <meta itemprop="priceCurrency" content="UAH" />
+                                        <meta itemprop="itemCondition" content="https://schema.org/UsedCondition" />
+                                        <meta itemprop="price" content="218599" />
+                                        <meta itemprop="priceValidUntil" content="2021-03-29" />
+                                    </div>
+                                    <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+                                        <meta itemprop="reviewCount" content="12" />
+                                        <meta itemprop="ratingValue" content="4.4" />
+                                    </div>
+                                    <div itemprop="review" itemtype="http://schema.org/Review" itemscope>
+                                        <div itemprop="author" itemtype="http://schema.org/Person" itemscope>
+                                            <meta itemprop="name" content="Петя" />
+                                        </div>
+                                        <div itemprop="reviewRating" itemtype="http://schema.org/Rating" itemscope>
+                                            <meta itemprop="ratingValue" content="4" />
+                                            <meta itemprop="bestRating" content="5" />
+                                        </div>
+                                    </div>
+                                    <meta itemprop="sku" content="487914" />
+                                    <div itemprop="brand" itemtype="http://schema.org/Brand" itemscope>
+                                        <meta itemprop="name" content="ASUS" />
+                                    </div>
+                                </div>
+
+                                <div class="card__img">
+                                    <a href="card.html">
+                                    <div class="slider-img" id="U0487914">
+                                        <div class="slider-img__item active"
+                                             style="background-image: url(assets/images/U0487914_big.jpg)"></div>
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="card__brand">ASUS</div>
+                                <div class="card__price">
+                                    <div class="card__available card__available_false">нет в наличии</div>18&nbsp;599
+                                </div>
+                                <a href="card.html">
+                                    <div class="card__title">Ноутбук ASUS K513EA-BQ163 (90NB0SG3-M01960)</div>
+                                </a>
+                                <div class="card__footer">
+                                    <div class="card__footer-button card__footer-like"><i
+                                            class="fas fa-heart"></i><span>Нравится</span></div>
+                                    <div class="card__footer-button card__footer-notify"><i
+                                            class="fas fa-envelope"></i><span>Уведомить</span></div>
+                                </div>
+                            </div>
+
+                                <div class="card__description">15.6", FullHD (1920 х 1080), IPS, Intel Core i3 1115G4 (4.1 ГГц),
+                                    8 ГБ, SSD - 256 ГБ, Intel UHD Graphics, без операционной системы, 1.8 кг, золотой</div>
+
+                        </div>
+                    </div>
+                    <div class="product-list__block">
+                        <div class="product-list__item">
+
+                            <div itemtype="http://schema.org/Product" itemscope>
+                                <meta itemprop="mpn" content="480550" />
+                                <meta itemprop="name" content="HP Pavilion 15 Gaming" />
+                                <link itemprop="image" href="assets/images/U0431079_big.jpg" />
+                                <meta itemprop="description" content="15.6, FullHD (1920 х 1080), SVA, AMD Ryzen 5 3550H (2.1 - 3.7
+                                      GHz), 8 ГБ, SSD - 256 ГБ, NVIDIA GeForce GTX 1050, GPU - 3 ГБ, DOS, 2.25 кг, черный" />
+                                <div itemprop="offers" itemtype="http://schema.org/Offer" itemscope>
+                                    <link itemprop="url" href="card.html" />
+                                    <meta itemprop="availability" content="https://schema.org/InStock" />
+                                    <meta itemprop="priceCurrency" content="UAH" />
+                                    <meta itemprop="itemCondition" content="https://schema.org/UsedCondition" />
+                                    <meta itemprop="price" content="20999" />
+                                    <meta itemprop="priceValidUntil" content="2021-03-29" />
+                                </div>
+                                <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+                                    <meta itemprop="reviewCount" content="12" />
+                                    <meta itemprop="ratingValue" content="4.4" />
+                                </div>
+                                <div itemprop="review" itemtype="http://schema.org/Review" itemscope>
+                                    <div itemprop="author" itemtype="http://schema.org/Person" itemscope>
+                                        <meta itemprop="name" content="Петя" />
+                                    </div>
+                                    <div itemprop="reviewRating" itemtype="http://schema.org/Rating" itemscope>
+                                        <meta itemprop="ratingValue" content="4" />
+                                        <meta itemprop="bestRating" content="5" />
+                                    </div>
+                                </div>
+                                <meta itemprop="sku" content="480550" />
+                                <div itemprop="brand" itemtype="http://schema.org/Brand" itemscope>
+                                    <meta itemprop="name" content="HP" />
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__img">
+                                    <a href="card.html">
+                                        <div class="slider-img" id="U0480550">
+                                            <div class="slider-img__item active"
+                                                 style="background-image: url(assets/images/U0480550_big.jpg)"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card__brand">HP</div>
+                                <div class="card__price">
+                                    <div class="card__available card__available_true">в наличии</div>20&nbsp;999
+                                </div>
+                                <a href="card.html">
+                                    <div class="card__title">Ноутбук HP Pavilion 15 Gaming (8RQ36EA)</div>
+                                </a>
+                                <div class="card__footer">
+                                    <div class="card__footer-button card__footer-like"><i
+                                            class="fas fa-heart"></i><span>Нравится</span></div>
+                                    <div class="card__footer-button card__footer-buy"><i
+                                            class="fas fa-cart-plus"></i><span>В корзину</span></div>
+                                </div>
+                            </div>
+
+                                <div class="card__description">15.6", FullHD (1920 х 1080), SVA, AMD Ryzen 5 3550H (2.1 - 3.7
+                                    GHz), 8 ГБ, SSD - 256 ГБ, NVIDIA GeForce GTX 1050, GPU - 3 ГБ, DOS, 2.25 кг, черный</div>
+
+                        </div>
+                    </div>
+                    <div class="product-list__block">
+                        <div class="product-list__item">
+
+                            <div itemtype="http://schema.org/Product" itemscope>
+                                <meta itemprop="mpn" content="431079" />
+                                <meta itemprop="name" content="Apple iPhone SE (2020) 64Gb" />
+                                <link itemprop="image" href="assets/images/U0431079_big.jpg" />
+                                <meta itemprop="description" content="4.7, 750 x 1334, CPU - Apple A13 Bionic, 3 Gb, 64 Gb, 12 Mpx,
+                                      Front - 7 Mpx, Bluetooth, WI-FI, NFC, 1820 mAh, красный" />
+                                <div itemprop="offers" itemtype="http://schema.org/Offer" itemscope>
+                                    <link itemprop="url" href="card.html" />
+                                    <meta itemprop="availability" content="https://schema.org/InStock" />
+                                    <meta itemprop="priceCurrency" content="UAH" />
+                                    <meta itemprop="itemCondition" content="https://schema.org/UsedCondition" />
+                                    <meta itemprop="price" content="213399" />
+                                    <meta itemprop="priceValidUntil" content="2021-03-29" />
+                                </div>
+                                <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+                                    <meta itemprop="reviewCount" content="12" />
+                                    <meta itemprop="ratingValue" content="4.4" />
+                                </div>
+                                <div itemprop="review" itemtype="http://schema.org/Review" itemscope>
+                                    <div itemprop="author" itemtype="http://schema.org/Person" itemscope>
+                                        <meta itemprop="name" content="Петя" />
+                                    </div>
+                                    <div itemprop="reviewRating" itemtype="http://schema.org/Rating" itemscope>
+                                        <meta itemprop="ratingValue" content="4" />
+                                        <meta itemprop="bestRating" content="5" />
+                                    </div>
+                                </div>
+                                <meta itemprop="sku" content="431079" />
+                                <div itemprop="brand" itemtype="http://schema.org/Brand" itemscope>
+                                    <meta itemprop="name" content="APPLE" />
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__img">
+                                    <a href="card.html">
+                                        <div class="slider-img" id="U0431079">
+                                            <div class="slider-img__item active"
+                                                 style="background-image: url(assets/images/U0431079_big.jpg)"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card__brand">Apple</div>
+                                <div class="card__price">
+                                    <div class="card__available card__available_true">в наличии</div>13&nbsp;399
+                                </div>
+                                <a href="card.html">
+                                    <div class="card__title">Мобильный телефон Apple iPhone SE (2020) 64Gb PRODUCT (Red)
+                                        (MX9U2RM/A | MX9U2FS/A)</div>
+                                </a>
+                                <div class="card__footer">
+                                    <div class="card__footer-button card__footer-like"><i
+                                            class="fas fa-heart"></i><span>Нравится</span></div>
+                                    <div class="card__footer-button card__footer-buy"><i
+                                            class="fas fa-cart-plus"></i><span>В корзину</span></div>
+                                </div>
+                            </div>
+
+                                <div class="card__description">4.7", 750 x 1334, CPU - Apple A13 Bionic, 3 Gb, 64 Gb, 12 Mpx,
+                                    Front - 7 Mpx, Bluetooth, WI-FI, NFC, 1820 mAh, красный</div>
+
+                        </div>
+                    </div>
+                    <div class="product-list__block">
+                        <div class="product-list__item">
+                            <div itemtype="http://schema.org/Product" itemscope>
+                                <meta itemprop="mpn" content="473252" />
+                                <meta itemprop="name" content="Apple iPhone 12 mini 64Gb Green" />
+                                <link itemprop="image" href="assets/images/U0473252_big.jpg" />
+                                <meta itemprop="description" content="5.4, 1080 x 2340 pixels, CPU - Apple A14 Bionic, 4 Gb, 64 Gb, 12
+                          + 12 Mpx, Front - 12 Mpx, Bluetooth, WI-FI, NFC, н. д., зеленый" />
+                                <div itemprop="offers" itemtype="http://schema.org/Offer" itemscope>
+                                    <link itemprop="url" href="card.html" />
+                                    <meta itemprop="availability" content="https://schema.org/InStock" />
+                                    <meta itemprop="priceCurrency" content="UAH" />
+                                    <meta itemprop="itemCondition" content="https://schema.org/UsedCondition" />
+                                    <meta itemprop="price" content="25999" />
+                                    <meta itemprop="priceValidUntil" content="2021-03-29" />
+                                </div>
+                                <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+                                    <meta itemprop="reviewCount" content="12" />
+                                    <meta itemprop="ratingValue" content="4.4" />
+                                </div>
+                                <div itemprop="review" itemtype="http://schema.org/Review" itemscope>
+                                    <div itemprop="author" itemtype="http://schema.org/Person" itemscope>
+                                        <meta itemprop="name" content="Петя" />
+                                    </div>
+                                    <div itemprop="reviewRating" itemtype="http://schema.org/Rating" itemscope>
+                                        <meta itemprop="ratingValue" content="4" />
+                                        <meta itemprop="bestRating" content="5" />
+                                    </div>
+                                </div>
+                                <meta itemprop="sku" content="473252" />
+                                <div itemprop="brand" itemtype="http://schema.org/Brand" itemscope>
+                                    <meta itemprop="name" content="APPLE" />
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__img">
+                                    <a href="card.html">
+                                        <div class="slider-img" id="U0473252">
+                                            <div class="slider-img__item active"
+                                                 style="background-image: url(assets/images/U0473252_big.jpg)"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card__brand">Apple</div>
+                                <div class="card__price">
+                                    <div class="card__available card__available_true">в наличии</div>25&nbsp;999
+                                </div>
+                                <a href="card.html">
+                                    <div class="card__title">Мобильный телефон Apple iPhone 12 mini 64Gb Green (MGE23FS/A |
+                                        MGE23RM/A)</div>
+                                </a>
+                                <div class="card__footer">
+                                    <div class="card__footer-button card__footer-like" ><i
+                                            class="fas fa-heart"></i><span>Нравится</span></div>
+                                    <div class="card__footer-button card__footer-buy" ><i
+                                            class="fas fa-cart-plus"></i><span>В корзину</span></div>
+                                </div>
+                            </div>
+
+                                <div class="card__description">5.4", 1080 x 2340 pixels, CPU - Apple A14 Bionic, 4 Gb, 64 Gb, 12
+                                    + 12 Mpx, Front - 12 Mpx, Bluetooth, WI-FI, NFC, н. д., зеленый</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="paginate align-center ">
+                    <div>
+                        <ul>
+                            <li class="paginate_active">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>&gt;&gt;</li>
+                        </ul>
+                    </div>
+                    <div class="paginate__settings">
+                        <div class="paginate__settings_item">На странице: <div class="paginate__settings_item_count"
+                                                                               >3 </div>
+                            <div class="paginate__settings_item_count">6 </div>
+                            <div class="paginate__settings_item_count">12</div>
+                        </div>
+                        <div class="paginate__settings_item">Показать все товары</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="bottom-container align-center space-between">
+        <div class="copyright">
+            © 2021 - Megashop
+        </div>
+        <div class="contacts">тел. 099-499-499-6, 096-499-499-6</div>
+    </div>
+</footer>
+
+</body>
+</html>

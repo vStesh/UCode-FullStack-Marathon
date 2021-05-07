@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Vladimir Steshenko, Владимир Стешенко, UCode, Sprint01, t05, HTML, CSS">
+    <meta name="author" content="Vladimir Steshenko, Владимир Стешенко">
+    <meta name="description" content="UCode It Academy. Sprint01, t05 by Vladimir Steshenko, Settings">
+    <title>t05. Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Settings</h1>
+<div class="wrapper">
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <div class="column">
+                    <span>Typeface</span>
+                    <select name="font" id="font">
+                        <option value="" selected>Acunim Pro</option>
+                        <option value="">Comic Sans</option>
+                        <option value="" disabled>Times New Roman</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <span>Dark UI</span>
+                <label for="darkui">
+                    <input class="check-hide" type="checkbox" id="darkui">
+                    <div class="check-ball"></div>
+                </label>
+
+            </div>
+            <div class="form-group">
+                <div class="column">
+                    <span>Weight</span>
+                    <div class="row weight">
+                        <label for="regular">
+                            <input type="checkbox" class="check-hide" id="regular">
+                            <div class="check-bird"></div>
+                            <span>Regular</span>
+                        </label>
+                        <label for="bold">
+                            <input type="checkbox" class="check-hide" id="bold">
+                            <div class="check-bird"></div>
+                            <span>Bold</span>
+                        </label>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="form-group">
+                <div class="column">
+                    <span>Color</span>
+                    <div class="row color">
+                        <label for="blue">
+                            <input type="checkbox" class="check-hide" id="blue">
+                            <div class="check-circle blue"></div>
+                        </label>
+                        <label for="green">
+                            <input type="checkbox" class="check-hide" id="green">
+                            <div class="check-circle green"></div>
+                        </label>
+                        <label for="rose">
+                            <input type="checkbox" class="check-hide" id="rose">
+                            <div class="check-circle rose"></div>
+                        </label>
+                        <label for="yellow">
+                            <input type="checkbox" class="check-hide" id="yellow">
+                            <div class="check-circle yellow"></div>
+                        </label>
+                        <label for="coral">
+                            <input type="checkbox" class="check-hide" id="coral">
+                            <div class="check-circle coral"></div>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <div class="column range">
+                    <span>Size</span>
+                    <input type="range" min="1" max="10" step="1">
+
+                </div>
+
+            </div>
+        </form>
+        <div class="r-img">
+            <img src="assets/images/artistic-brush.png" />
+            <img src="assets/images/user-icon.png" />
+            <img src="assets/images/sms-speech-bubble.png" />
+            <img src="assets/images/computer-screen.png" />
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

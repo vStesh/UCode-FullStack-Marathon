@@ -1,0 +1,22 @@
+
+.circle {
+    margin-top: 50px;
+    animation-name: anim;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: green;
+
+}
+@keyframes anim {
+    from {margin-left: calc(100% - 230px);}
+    to {margin-left: 20px;}
+
+}
+.circle:hover {
+    background: red;
+    transition: 2s linear;
+}

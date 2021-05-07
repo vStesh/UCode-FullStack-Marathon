@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+@media (max-width: 639px) {
+    .container {
+        height: 800px;
+        width: 270px;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 50% 15% 15% 1.63% 23%;
+        grid-template-rows: 11.5% 11.5% 11.5% 11.5% 11% 22% 22%;
+    }
+    img {
+        height: 100%;
+    }
+    img:nth-of-type(1n) { grid-column: 1 /  6; }
+    img:nth-of-type(2n) { grid-column: 1 /  6; }
+    img:nth-of-type(3n) { grid-column: 1 /  6; }
+    img:nth-of-type(4n) { grid-column: 1 /  4; grid-row:  4 / 5;}
+    img:nth-of-type(5n) { grid-column: 1 /  3; grid-row:  5 / 6;}
+    img:nth-of-type(6n) { grid-row:  4 / 6; grid-column: 3 /  6; }
+    img:nth-of-type(7n) { grid-column: 1 /  3; grid-row:  6 / 7;}
+    img:nth-of-type(8n) { grid-column: 2 /  6; grid-row:  6 / 7; }
+    img:nth-of-type(9n) { grid-column: 1 /  4; }
+}
+
+
+@media (min-width: 640px) and (max-width: 1365px) {
+    .container {
+        height: 1000px;
+        width: 410px;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 92px 35px 84px 20px 20px 20px 20px 100px;
+        grid-template-rows: 14.29% 14.29% 11.94% 11.94% 23.77% 23.77%;
+    }
+    img {
+        height: 100%;
+    }
+    img:nth-of-type(1n) { grid-column: 1 /  7; }
+    img:nth-of-type(2n) { grid-column: 1 /  8; }
+    img:nth-of-type(3n) { grid-column: 1 /  6; }
+    img:nth-of-type(4n) { grid-column: 1 /  4; }
+    img:nth-of-type(5n) { grid-column: 4 /  9; }
+    img:nth-of-type(6n) { grid-column: 1 /  3; }
+    img:nth-of-type(7n) { grid-column: 3 /  7; }
+    img:nth-of-type(8n) { grid-column: 1 /  2; }
+    img:nth-of-type(9n) { grid-column: 2 /  7; }
+}
+
+@media (min-width: 1366px) {
+    .container {
+        /*width: auto;*/
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 19.53% 20.56% 5.15% 3.17% 4.24% 14.06% 5.87% 27.42%;
+        grid-template-rows: 28.5% 23.88% 47.54%;
+    }
+    img:nth-of-type(1n) { grid-column: 1 /  4; }
+    img:nth-of-type(2n) { grid-column: 4 /  9; }
+    img:nth-of-type(3n) { grid-column: 1 /  3; }
+    img:nth-of-type(4n) { grid-column: 3 /  8; }
+    img:nth-of-type(5n) { grid-column: 8 /  9; }
+    img:nth-of-type(6n) { grid-column: 1 /  2; }
+    img:nth-of-type(7n) { grid-column: 2 /  5; }
+    img:nth-of-type(8n) { grid-column: 6 /  7; }
+    img:nth-of-type(9n) { grid-column: 7 /  9; }
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+
+}

@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    display: block;
+}
+img:hover {
+
+    transform: rotate(-30deg);
+}
+img {
+    position: absolute;
+    top: calc(50% - 95px);
+    right: calc(50% - 150px);
+}

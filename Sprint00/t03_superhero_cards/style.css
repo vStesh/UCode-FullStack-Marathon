@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+}
+.pair {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    height: 140px;
+    border-radius: 5px;
+    font-family: Verdana, serif;
+    margin: 30px 20px;
+
+}
+.hero-alias {
+    display: block;
+    text-align: right;
+    padding-right: 10px;
+}
+.hero-name {
+    float: right;
+    color: white;
+    font-size: 12px;
+    /*font-weight: bold;*/
+    padding-top: 5px;
+
+}
+.hero-rname {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 9px;
+
+}
+img {
+    transform: scale(0.88);
+    position: relative;
+    height: 182px;
+    /*bottom: 47px;*/
+    bottom: 31px;
+
+}
+img.spider {
+    /*bottom: 25px;*/
+    bottom: 11px;
+}
+.c-america {
+    background: linear-gradient(#4568DC, #B06AB3);
+}
+.i-man {
+    background: linear-gradient(#E52D27, #B31217);
+}
+.b-widow {
+    background: linear-gradient(#000, #61045F);
+}
+.s-man {
+    background: linear-gradient(#E52d27, #000);
+}
+
+
+/*0503568560*/
