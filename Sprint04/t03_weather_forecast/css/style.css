@@ -1,0 +1,130 @@
+.wrapper {
+    /* width: 700px; */
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.wrapper h1 {
+    width: 100%;
+    text-align: center;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 980px; */
+}
+.card {
+    width: 200px;
+    height: 330px;
+    margin: 5px;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.5);
+}
+.card:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.date {
+    text-align: center;
+    font-size: 1.5em;
+    background: #0e93b2;
+    color: white;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+
+}
+.weekday {
+    width: 100%;
+    font-family: Lato, sans-serif;
+    text-align: center;
+    padding: 5px 0;
+    /* border-bottom: 1px solid gray; */
+    background-color: rgba(128, 128, 128, 0.473);
+}
+.w-image {
+    width: 100%;
+    text-align: center;
+    /* height: 140px; */
+    /* background: no-repeat url(assets/images/icon.png); */
+    /* background-size: 450%; */
+
+}
+.desc {
+    text-align: center;
+    padding-bottom: 15px;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    
+}
+.sun {
+    background-position: 0px 1px;
+}
+.shadow {
+    background-position: -140px 1px;
+}
+.rain {
+    background-position: -300px 1px;
+}
+.snow {
+    background-position: -442px 1px;
+}
+.temp {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    position: relative;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    padding-bottom: 15pxƒ;
+}
+.temp:after {
+    content: "o";
+    position: absolute;
+    font-weight: bold;
+    font-size: 18px;
+}
+.temp1 {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    position: relative;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    padding-bottom: 5px;
+}
+.temp1:after {
+    content: "o";
+    position: absolute;
+    font-weight: bold;
+    font-size: 8px;
+}
+.temp-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.temp-night, .temp-morn, .temp-day, .temp-eve {
+    width: 24%;
+    text-align: center;
+}
+.temp-night, .temp-morn, .temp-day {
+    border-right: 1px solid gray;
+}
+.title1 {
+    margin: 5px 2px;
+}
+.temp-min, .temp-max {
+    width: 49.5%;
+    text-align: center;
+}
+.temp-min {
+    border-right: 1px solid gray;
+}
+.geo-title {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
