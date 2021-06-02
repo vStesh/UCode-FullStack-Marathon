@@ -2,7 +2,7 @@
 
 // Шаблон переключателя скинов
 const switcher = `
-<div class="switch-skins hide">
+<div class="switch-skins">
     <div class="skin-title">Skins </div>
     <div class="skin-switcher" id="OK"></div>
     <div class="skin-switcher" id="SY"></div>
