@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Vladimir Steshenko, Владимир Стешенко, UCode, Sprint09, t00, Node.js, MVC Pattern">
+  <meta name="author" content="Vladimir Steshenko, Владимир Стешенко">
+  <meta name="description" content="UCode It Academy. Sprint09, t00 by Vladimir Steshenko, Node.js, MVC Pattern">
+  <title>Sprint09 - MVC Project - Registration</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>MVC Project - Registration form</h1>
+    #TEXT#
+    <div class="box">
+      <form action="/user/create" method="post">
+        <div class="form-group">
+          <label for="name">name: </label>
+          <input type="text" name="name" id="name" placeholder="Input your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">email: </label>
+          <input type="email" name="email" id="email" placeholder="Input your email" required>
+        </div>
+        <div class="form-group">
+          <label for="login">login: </label>
+          <input type="text" name="login" id="login" placeholder="Input login" required>
+        </div>
+        <div class="form-group">
+          <label for="password">password: </label>
+          <input type="password" name="password" id="password" placeholder="Input password" required minlength="6">
+        </div>
+        <div class="form-group">
+          <label for="confirm">password: </label>
+          <input type="password" name="confirm" id="confirm" placeholder="Confirm password" required minlength="6">
+        </div>
+        <div class="form-group">
+          <button type="submit">
+            Create user
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector("button").addEventListener('click', (e) => validate(e));
+    function validate(e) {
+      let password = document.querySelector('#password');
+      let confirm = document.querySelector('#confirm');
+      console.log(password.value);
+      if(password.value !== confirm.value) {
+        e.preventDefault();
+        confirm.insertAdjacentHTML("afterend", "<div class='message error' id='error'>Passwords does not match</div>");
+        setTimeout(() => {
+          document.querySelector('.error').outerHTML = '';
+        },2000);
+      }
+    }
+  </script>
+</body>
+
+</html>

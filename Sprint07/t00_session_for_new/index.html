@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="keywords" content="Vladimir Steshenko, Владимир Стешенко, UCode, Sprint07, t00, Node.js, Session for new">
+      <meta name="author" content="Vladimir Steshenko, Владимир Стешенко">
+      <meta name="description" content="UCode It Academy. Sprint07, t00 by Vladimir Steshenko, Node.js, Session for new">
+      <title>t00. Session for new</title>
+      <style>
+          .powers-box input,
+          .public-box input,
+          button{
+              cursor: pointer;
+          }
+          fieldset{
+              padding: 25px;
+          }
+          input{
+              margin: 10px
+          }
+      </style>
+  </head>
+  <body>
+     <h1>Session for new</h1>
+    <form  id="form" action="/login" method="POST">
+      <fieldset>
+        <fieldset>
+            <legend>About candidate</legend>
+          <div>
+            <label for="name">Real Name</label>
+            <input type="text" size="25" id="name" name="name" placeholder="Tell your Real Name" required/>
+            <label for="alias">Current Alias</label>
+            <input type="text" size="25" id="alias" name="alias" placeholder="Tell your Current Alias" required/>
+            <label for="age">Age</label>
+            <input type="number" size="5" id="age" name="age" min="1" max="125" required/>
+          </div>
+          <div class="about">
+            <label for="text">About</label>
+            <textarea name="text" id="text" cols="70" rows="10" placeholder="Tell about yourself, max 500 symbols" maxlength="500" required></textarea>
+          </div>
+          <div>
+              <label>Your photo:</label>
+              <input type="file" name="photo" required>
+          </div>
+          <fieldset class="powers-box">
+            <legend>Powers</legend> 
+              <div>
+            <input type="checkbox" name="pw_strength">
+            <label>Strength</label>
+            <input type="checkbox" name="pw_speed">
+            <label>Speed</label>
+            <input type="checkbox" name="pw_intelligence">
+            <label>Intelligence</label>
+            <input type="checkbox" name="pw_teleportation">
+            <label>Teleportation</label>
+            <input type="checkbox" name="pw_immortal">
+            <label>Immortal</label>
+            <input type="checkbox" name="pw_another">
+            <label>Another</label>
+              </div>
+              <div>
+                <label for="volume">Level of control:</label>
+                <input type="range" id="volume" name="volume" step="1" value="0" min="0" max="10" required>
+              </div>
+          </fieldset>
+          <fieldset class="public-box">
+              <legend>Publicity</legend>
+              <input type="radio" name="pub_unknown">
+              <label>Unknown</label>
+              <input type="radio" name="pub_ghost">
+              <label>Ghost</label>
+              <input type="radio" name="pub_comics">
+              <label>Comics</label>
+              <input type="radio" name="pub_club">
+              <label>Club</label>
+              <input type="radio" name="pub_superstar">
+              <label>Superstar</label>
+          </fieldset>
+        </fieldset>
+        <button id="reset" type="reset">clear</button>
+        <button id="submit" type="submit">send</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

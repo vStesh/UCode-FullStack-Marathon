@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Vladimir Steshenko, Владимир Стешенко, UCode, Sprint09, t00, Node.js, MVC Pattern">
+  <meta name="author" content="Vladimir Steshenko, Владимир Стешенко">
+  <meta name="description" content="UCode It Academy. Sprint09, t00 by Vladimir Steshenko, Node.js, MVC Pattern">
+  <title>Sprint09 - MVC Project - Password reminder</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+<div class="nav-bar">
+  <div><h1>MVC Project - Password reminder</h1></div>
+  <div class="nav-menu">
+    <ul>
+      <li onclick="window.location.assign('/')">Home</li>
+      <li onclick="window.location.assign('/login')">Login</li>
+      <li onclick="window.location.assign('/register')">Register</li>
+    </ul>
+  </div>
+</div>
+  <div class="container">
+    <div class="box">
+      {#TEXT#}
+      <form action="/reminder" method="post">
+
+
+        <div class="form-group">
+          <label for="email">email: </label>
+          <input type="email" name="email" id="email" placeholder="Input email" required>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">
+            Remind me my password please
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
